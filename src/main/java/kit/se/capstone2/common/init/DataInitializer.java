@@ -38,7 +38,7 @@ public class DataInitializer {
 		public void init() {
 			Account adminAccount = Account.builder()
 					.username("admin")
-					.password(passwordEncoder.encode("se75407540"))
+					.password(passwordEncoder.encode("se75407540!"))
 					.role(Role.ROLE_ADMIN)
 					.approvalStatus(ApprovalStatus.APPROVED).build();
 

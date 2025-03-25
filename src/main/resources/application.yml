@@ -3,6 +3,19 @@ spring:
     name: capstone2
   profiles:
     default: dev
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+aws:
+  s3:
+    credentials:
+      accessKey: AKIAWRMXN2YQLBZIJVAS
+      secretKey: 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
+      region: ap-northeast-2
+    bucket: kit-law-in-comm-image
 
 jwt:
   secret: NzE3YjQ5NTNiZTc3MDRiODM3ZDI0MzJjYzQyZjc1MWE1OTNjNTQ4N2FkMjkzZDAwMThlYmI3MTdlMTEzNGRjYzc0YTE3NWZhODBhYWNkYWZhZDM1MTJmODQ0ODU0YmQ4ZmI2M2Q4ODAwZTFiNTY0ZTYzNWE3NGNkNzc1NDY3Njc=
