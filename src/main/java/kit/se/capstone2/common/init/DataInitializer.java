@@ -67,7 +67,7 @@ public class DataInitializer {
 					.name("관리자")
 					.nickname("관리자")
 					.birthDate(LocalDate.of(2000, 02, 21))
-					.phoneNumber("010-4262-5325")
+					.phoneNumber("010-1234-5678")
 					.build();
 
 			clientUser.addAccount(adminAccount);
@@ -76,8 +76,8 @@ public class DataInitializer {
 
 		public Lawyer initAIAssistant() {
 			Account aiAccount = Account.builder()
-					.username("minj21")
-					.password(passwordEncoder.encode("mjmj0221!"))
+					.username("test123")
+					.password(passwordEncoder.encode("test1234"))
 					.role(Role.ROLE_LAWYER)
 					.approvalStatus(ApprovalStatus.APPROVED).build();
 
